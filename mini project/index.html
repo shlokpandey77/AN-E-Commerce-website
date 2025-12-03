@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verdi Cart - Eco Friendly AI Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <h2 class="logo">Verdi Cart 🌿</h2>
+    <nav>
+        <a href="#slides" class="active">Home</a>
+        <a href="#overview">About</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+        <a class="cart-btn">🛒 Cart</a>
+    </nav>
+</header>
+
+<!-- SLIDER -->
+<section id="slides">
+    <div>
+        <h1>Eco-Friendly Shopping Starts Here</h1>
+        <p>Discover greener alternatives powered by AI.</p>
+    </div>
+
+    <div>
+        <h1>Shop Smart. Shop Green.</h1>
+        <p>Sustainable choices made simple.</p>
+    </div>
+</section>
+
+<!-- OVERVIEW -->
+<section id="overview">
+    <h2>Site overview</h2>
+    <p>
+        Verdi Cart is an AI-powered eco-friendly e-commerce platform designed to help users
+        make smarter and sustainable purchase decisions. The platform recommends products based on eco scores
+        and environmental impact.
+    </p>
+</section>
+
+<!-- PRODUCT SECTION -->
+<section id="products">
+    <h2>Featured Products</h2>
+
+    <div class="product-container">
+        <div class="product-card">
+            <img src="image/Eco product 1.jpg" alt="Product Image">
+            <h3>Green Leaf Bamboo ToothBrush</h3>
+            <p>Sustainability Score: <strong>90/100</strong></p>
+            <p><strong>₹100</strong></p>
+            <button onclick="showDetails(this)" 
+                data-name="Green Leaf Bamboo ToothBrush" 
+                data-price="₹100" 
+                data-score="90/100" 
+                data-img="image/Eco product 1.jpg">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="image/Eco product 2.webp" alt="Product Image">
+            <h3>EarthNest Recycled Tote Bag</h3>
+            <p>Sustainability Score: <strong>90/100</strong></p>
+            <p><strong>₹150</strong></p>
+            <button onclick="showDetails(this)" 
+                data-name="EarthNest Recycled Tote Bag" 
+                data-price="₹150" 
+                data-score="90/100" 
+                data-img="image/Eco product 2.webp">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="image/Eco product 3.webp" alt="Product Image">
+            <h3>PureMist Copper Water Bottle</h3>
+            <p>Sustainability Score: <strong>90/100</strong></p>
+            <p><strong>₹125</strong></p>
+            <button onclick="showDetails(this)" 
+                data-name="PureMist Copper Water Bottle" 
+                data-price="₹125" 
+                data-score="90/100" 
+                data-img="image/Eco product 3.webp">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="image/Eco product 4.jpg" alt="Product Image">
+            <h3>EcoWave Steel Straw Set</h3>
+            <p>Sustainability Score: <strong>90/100</strong></p>
+            <p><strong>₹170 </strong></p>
+            <button onclick="showDetails(this)" 
+                data-name="EcoWave Steel Straw Set" 
+                data-price="₹170" 
+                data-score="90/100" 
+                data-img="image/Eco product 4.jpg">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="image/Eco product 5.jpeg" alt="Product Image">
+            <h3>NatureCraft Palm Leaf Plates</h3>
+            <p>Sustainability Score: <strong>90/100</strong></p>
+            <p><strong>₹200</strong></p>
+            <button onclick="showDetails(this)" 
+                data-name="NatureCraft Palm Leaf Plates" 
+                data-price="₹200" 
+                data-score="90/100" 
+                data-img="image/Eco product 5.jpeg">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="image/Eco product 6.jpg" alt="Product Image">
+            <h3>ZeroWaste Cloth Grocery Bags</h3>
+            <p>Sustainability Score: <strong>90/100</strong></p>
+            <p><strong>₹210</strong></p>
+            <button onclick="showDetails(this)" 
+                data-name="ZeroWaste Cloth Grocery Bags" 
+                data-price="₹210" 
+                data-score="90/100" 
+                data-img="image/Eco product 6.jpg">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="image/Eco products 7.jpg" alt="Product Image">
+            <h3>FreshAura Organic Soap Bar</h3>
+            <p>Sustainability Score: <strong>90/100</strong></p>
+            <p><strong>₹220</strong></p>
+            <button onclick="showDetails(this)" 
+                data-name="FreshAura Organic Soap Bar" 
+                data-price="₹220" 
+                data-score="90/100" 
+                data-img="image/Eco products 7.jpg">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="image/Eco product 8.jpg" alt="Product Image">
+            <h3>EcoGlow Soy Wax Candle</h3>
+            <p>Sustainability Score: <strong>90/100</strong></p>
+            <p><strong>₹225</strong></p>
+            <button onclick="showDetails(this)" 
+                data-name="EcoGlow Soy Wax Candle" 
+                data-price="₹225" 
+                data-score="90/100" 
+                data-img="image/Eco product 8.jpg">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="image/Eco product 9.jpg" alt="Product Image">
+            <h3>BioBlend Compostable Cutlery</h3>
+            <p>Sustainability Score: <strong>90/100</strong></p>
+            <p><strong>₹230</strong></p>
+            <button onclick="showDetails(this)" 
+                data-name="BioBlend Compostable Cutlery" 
+                data-price="₹230" 
+                data-score="90/100" 
+                data-img="image/Eco product 9.jpg">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="image/Eco product 10.jpg" alt="Product Image">
+            <h3>LeafLife Wooden Phone Stand</h3>
+            <p>Sustainability Score: <strong>90/100</strong></p>
+            <p><strong>₹235</strong></p>
+            <button onclick="showDetails(this)" 
+                data-name="LeafLife Wooden Phone Stand" 
+                data-price="₹235" 
+                data-score="90/100" 
+                data-img="image/Eco product 10.jpg">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="image/Eco product 11.jpg" alt="Product Image">
+            <h3>EcoSoft Microfiber Cloth Set</h3>
+            <p>Sustainability Score: <strong>90/100</strong></p>
+            <p><strong>₹240</strong></p>
+            <button onclick="showDetails(this)" 
+                data-name="EcoSoft Microfiber Cloth Set" 
+                data-price="₹240" 
+                data-score="90/100" 
+                data-img="image/Eco product 11.jpg">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="image/Eco product 12.jpeg" alt="Product Image">
+            <h3>PlanetPure Natural Floor Cleaner</h3>
+            <p>Sustainability Score: <strong>90/100</strong></p>
+            <p><strong>₹245</strong></p>
+            <button onclick="showDetails(this)" 
+                data-name="PlanetPure Natural Floor Cleaner" 
+                data-price="₹245" 
+                data-score="90/100" 
+                data-img="image/Eco product 12.jpeg">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="image/Eco product 13.jpeg" alt="Product Image">
+            <h3>Natura Hemp Coffee Mug Sleeve</h3>
+            <p>Sustainability Score: <strong>90/100</strong></p>
+            <p><strong>₹245</strong></p>
+            <button onclick="showDetails(this)" 
+                data-name="Natura Hemp Coffee Mug Sleeve" 
+                data-price="₹245" 
+                data-score="90/100" 
+                data-img="image/Eco product 13.jpeg">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="image/Eco product 14.webp" alt="Product Image">
+            <h3>EcoFusion Jute Laptop Sleeve</h3>
+            <p>Sustainability Score: <strong>90/100</strong></p>
+            <p><strong>₹250</strong></p>
+            <button onclick="showDetails(this)" 
+                data-name="EcoFusion Jute Laptop Sleeve" 
+                data-price="₹250" 
+                data-score="90/100" 
+                data-img="image/Eco product 14.webp">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="image/Eco product 15.jpeg" alt="Product Image">
+            <h3>ReVibe Cork Yoga Mat</h3>
+            <p>Sustainability Score: <strong>90/100</strong></p>
+            <p><strong>₹255</strong></p>
+            <button onclick="showDetails(this)" 
+                data-name="ReVibe Cork Yoga Mat" 
+                data-price="₹255" 
+                data-score="90/100" 
+                data-img="image/Eco product 15.jpeg">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="image/Eco product 16.jpg" alt="Product Image">
+            <h3>BioBottles Refillable Spray Bottle</h3>
+            <p>Sustainability Score: <strong>90/100</strong></p>
+            <p><strong>₹260</strong></p>
+            <button onclick="showDetails(this)" 
+                data-name="BioBottles Refillable Spray Bottle" 
+                data-price="₹260" 
+                data-score="90/100" 
+                data-img="image/Eco product 16.jpg">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="image/Eco product 17.jpeg" alt="Product Image">
+            <h3>GreenHome Coir Doormat</h3>
+            <p>Sustainability Score: <strong>90/100</strong></p>
+            <p><strong>₹265</strong></p>
+            <button onclick="showDetails(this)" 
+                data-name="GreenHome Coir Doormat" 
+                data-price="₹265" 
+                data-score="90/100" 
+                data-img="image/Eco product 17.jpeg">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="image/Eco product 18.jpeg" alt="Product Image">
+            <h3>EcoFresh Herbal Face Mist</h3>
+            <p>Sustainability Score: <strong>90/100</strong></p>
+            <p><strong>₹270</strong></p>
+            <button onclick="showDetails(this)" 
+                data-name="EcoFresh Herbal Face Mist" 
+                data-price="₹270" 
+                data-score="90/100" 
+                data-img="image/Eco product 18.jpeg">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="image/Eco product 19.jpeg" alt="Product Image">
+            <h3>ReLeaf Bamboo Cotton Swabs</h3>
+            <p>Sustainability Score: <strong>90/100</strong></p>
+            <p><strong>₹275</strong></p>
+            <button onclick="showDetails(this)" 
+                data-name="ReLeaf Bamboo Cotton Swabs" 
+                data-price="275" 
+                data-score="90/100" 
+                data-img="image/Eco product 19.jpeg">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="image/Eco product 20.webp" alt="Product Image">
+            <h3>EarthPulse Handmade Clay Cup</h3>
+            <p>Sustainability Score: <strong>90/100</strong></p>
+            <p><strong>₹280</strong></p>
+            <button onclick="showDetails(this)" 
+                data-name="EarthPulse Handmade Clay Cup" 
+                data-price="₹280" 
+                data-score="90/100" 
+                data-img="image/Eco product 20.webp">
+                Add to Cart
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- PRODUCT DETAILS PANEL -->
+<div id="productDetails" class="details-panel">
+    <span class="close-btn" onclick="closeDetails()">×</span>
+    <img id="detailImg">
+    <h2 id="detailName"></h2>
+    <p id="detailScore"></p>
+    <p id="detailPrice"></p>
+    <button class="buy-btn">Buy Now</button>
+</div>
+
+<!-- NOTIFICATION -->
+<div id="notifyBox" class="notify">
+    ✔ Order placed successfully!
+</div>
+
+<!-- FOOTER -->
+<footer id="contact">
+    <div class="footer-container">
+
+        <div class="footer-section">
+            <img src="image/logo.png" class="footer-logo">
+            <p>Powered by AI. Guided by Nature.</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Founder</h3>
+            <p><strong>Shlok Pandey</strong></p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <p>Email: verdicart@gmail.com</p>
+            <p>Number: +91- 9480-5678-77</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        © 2025 Verdi Cart  All Rights Reserved | Crafted with care • Built for a better tomorrow.- Shlok Pandey
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
